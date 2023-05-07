@@ -31,7 +31,7 @@
     <main class="container">
         <!--Initial load-up page-->
         <!--Format quiz name into a row to allow centering-->
-        <div class="row justify-content-md-center" id="initital">
+        <div class="row justify-content-md-center" id="inititalize">
             <h1 class="col-6">JavaScript Challenge Quiz</h1>
             <!--Change description to a different color (secondary)-->
             <p class="text-secondary">Take this quiz to test your knowledge on the fundamentals of Javascript. Be warned, incorrect answers will result in a ten second penalty to your time.  Goodluck!</p>
@@ -39,14 +39,14 @@
         <!--Center button in the middle of the webpage-->
         <div class="row justify-content-md-center">
             <!--Change button color to info with bootstrap-->
-            <button type="button" class="btn btn-outline-info">Start Quiz</button>
+            <button type="button" class="btn btn-outline-info" id="btnstartquiz">Start Quiz</button>
         </div>
 
         <!--quiz page-->
         <!--do not display until called for in JS-->
         <div id="questionsection" style="display:none">
             <p class="justify-content-md-center" id="questions"></p>
-            <div class="answerbtn row justify-content-center">
+            <div class="row justify-content-center">
                 <!--Answer buttons for multiple choice-->
                 <button class="btn btn-info" id="btn1"></button>
                 <button class="btn btn-info" id="btn2"></button>
@@ -71,7 +71,7 @@
         <!--View Highscores clickable section-->
         <div class="row justify-content-md-center" id="highscoresec" style="display:none">
             <h3 class="font-weight-bold">Highscores</h3>
-            <div class="savedscores" class="list-group"></div>
+            <div class="list-group" id="savedscores"></div>
             <button type="submit" class="btn btn-info" id="homepage">Return to Start Quiz</button>
         </div>
     </main>  

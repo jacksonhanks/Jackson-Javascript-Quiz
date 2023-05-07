@@ -1,3 +1,30 @@
+//Define variables from HTML references by ID
+//Highscore related variables
+var viewHighScores = document.getElementById("highscores");
+var HighScoreSec = document.getElementById("highscoresec");
+var savedScoresList = document.getElementById("savedscores");
+var scoreSection = document.getElementById("scoresection");
+var currentScore = document.getElementById("score");
+var inputInitials = document.getElementById("initials");
+var btnSubmitScore = document.getElementById("submitscore");
+
+//Start quiz realted variables
+var inititalize = document.getElementById("inititalize");
+var btnStartQuiz = document.getElementById("btnstartquiz");
+var btnHomePage = document.getElementById("homepage");
+
+//Time related variables
+var time = document.getElementById("time");
+
+//Question/answer realted variables
+var questionSection = document.getElementById("questionsection");
+var question = document.getElementById("questions");
+var choiceOne = document.getElementById("btn1");
+var choiceTwo = document.getElementById("btn2");
+var choiceThree = document.getElementById("btn3");
+var choiceFour = document.getElementById("btn4");
+
+//Quiz questions and multiple-choice answers
 const questions = [
     {
         question: "JavaScript primarily handles what?",
